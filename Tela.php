@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tela de Login</title>
+</head>
+<body>
+    <h2>Tela de Login</h2>
+    <?php if (isset($erro)) { ?>
+        <p><?php echo $erro; ?></p>
+    <?php } ?>
+    <form method="post" action="index.php">
+        <label for="usuario">Usuário:</label>
+        <input type="text" name="usuario" id="usuario" required><br><br>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required><br><br>
+        
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+</html>
