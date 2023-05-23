@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
     if ($result) {
         $_SESSION['usuario'] = $usuario; 
-        header("Location: Conteudo.html");
+        header("Location: conteudo.html");
         exit();
     } else {
         $erro = "Usuário ou senha inválidos.";
